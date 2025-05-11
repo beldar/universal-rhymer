@@ -1,12 +1,12 @@
 {
   "name": "universal-rhymer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test": "jest",
+    "test": "tsc -p tsconfig.test.json && jest",
     "demo": "ts-node demo.ts",
     "csv2dict": "ts-node csv2dict.ts"
   },
